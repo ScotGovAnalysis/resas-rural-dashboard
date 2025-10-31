@@ -1,0 +1,50 @@
+﻿Region,Mode of Travel,2015,2016,2017,2018,2019,2020,2021,2022,2023
+Large urban areas,Walking ,15.8,16.1,14.7,15,15,#N/A,#N/A,15,13.5
+Other urban,Walking ,12.9,10.8,11.1,9,10,#N/A,#N/A,14,12.4
+Small accessible towns,Walking ,11.7,11.3,10.2,11,8,#N/A,#N/A,8,9.5
+Small remote towns,Walking ,30.5,18.7,23,28,28,#N/A,#N/A,27,22
+Accessible rural,Walking ,7.1,3.8,4.6,4,6,#N/A,#N/A,4,5
+Remote rural ,Walking ,12.2,11.9,10.7,13,14,#N/A,#N/A,10,12.2
+All Scotland,Walking ,13.6,12.3,12,11.8,12,#N/A,#N/A,13,11.8
+Large urban areas,Driver,49.8,49.7,50.2,49,50,#N/A,#N/A,52,50
+Other urban,Driver,61.8,66.1,65,69,67,#N/A,#N/A,64,64.9
+Small accessible towns,Driver,69.9,66,72.3,71,72,#N/A,#N/A,73,74.2
+Small remote towns,Driver,56.3,61.2,59.5,46,55,#N/A,#N/A,57,66.5
+Accessible rural,Driver,75.9,81.8,77.4,79,82,#N/A,#N/A,85,79
+Remote rural ,Driver,70.8,67.5,77.5,78,75,#N/A,#N/A,78,77.5
+All Scotland,Driver,60.3,61.7,62.3,62.9,63.1,#N/A,#N/A,63.8,62.8
+Large urban areas,Passenger,4.9,5.3,5.1,4,4,#N/A,#N/A,4,4.7
+Other urban,Passenger,7.2,5.6,6.8,5,6,#N/A,#N/A,5,5.7
+Small accessible towns,Passenger,3.9,5.4,3.7,6,7,#N/A,#N/A,6,5.5
+Small remote towns,Passenger,1.7,4.8,6.4,9,6,#N/A,#N/A,5,4.1
+Accessible rural,Passenger,3.6,4.1,4.3,5,4,#N/A,#N/A,3,1.1
+Remote rural ,Passenger,8.7,8.1,2.2,3,3,#N/A,#N/A,3,6.2
+All Scotland,Passenger,5.6,5.3,5.4,4.8,5.1,#N/A,#N/A,4.4,4.7
+Large urban areas,Bicycle ,3.5,4.3,5.2,4,5,#N/A,#N/A,5,4.8
+Other urban,Bicycle ,1.8,1.8,2.4,2,2,#N/A,#N/A,2,2.2
+Small accessible towns,Bicycle ,2.7,#N/A,#N/A,1,2,#N/A,#N/A,1,1.4
+Small remote towns,Bicycle ,0.1,5.3,1.6,0,2,#N/A,#N/A,7,#N/A
+Accessible rural,Bicycle ,0.5,#N/A,1.4,3,1,#N/A,#N/A,2,1.3
+Remote rural ,Bicycle ,0.5,#N/A,#N/A,2,1,#N/A,#N/A,1,#N/A
+All Scotland,Bicycle ,2.2,2.6,3,2.8,2.7,#N/A,#N/A,3,2.9
+Large urban areas,Bus ,18.3,16.7,16.3,18,17,#N/A,#N/A,15,17.1
+Other urban,Bus ,8.9,8.3,7.1,7,7,#N/A,#N/A,8,8.1
+Small accessible towns,Bus ,6.6,7.2,5.5,7,6,#N/A,#N/A,4,4.2
+Small remote towns,Bus ,3.7,2.5,3.8,5,6,#N/A,#N/A,1,#N/A
+Accessible rural,Bus ,6.5,3.6,5.6,4,2,#N/A,#N/A,2,6.5
+Remote rural ,Bus ,2.3,4.9,5.5,2,3,#N/A,#N/A,6,1
+All Scotland,Bus ,11.2,10.4,9.8,10.1,9.6,#N/A,#N/A,9,10.3
+Large urban areas,Rail ,5.8,6,6.3,8,7,#N/A,#N/A,6,7.6
+Other urban,Rail ,4.7,6,5.7,5,6,#N/A,#N/A,5,4.5
+Small accessible towns,Rail ,3.9,5.9,4,3,3,#N/A,#N/A,4,3.5
+Small remote towns,Rail ,1.7,#N/A,#N/A,5,2,#N/A,#N/A,0,0
+Accessible rural,Rail ,2.3,2.2,3.6,2,4,#N/A,#N/A,4,4.8
+Remote rural ,Rail ,0,#N/A,#N/A,0,1,#N/A,#N/A,0,#N/A
+All Scotland,Rail ,4.4,5.2,5.1,5.5,5.4,#N/A,#N/A,4.4,5.3
+Large urban areas,Other ,1.9,2,2.2,2,2,#N/A,#N/A,3,2.3
+Other urban,Other ,2.8,1.5,1.8,2,2,#N/A,#N/A,2,2
+Small accessible towns,Other ,1.2,3.2,3.5,1,3,#N/A,#N/A,3,1.6
+Small remote towns,Other ,6,6.4,3.2,6,2,#N/A,#N/A,4,2
+Accessible rural,Other ,3.9,3.8,3.2,2,2,#N/A,#N/A,1,2.3
+Remote rural ,Other ,5.4,5,3,2,2,#N/A,#N/A,2,2.6
+All Scotland,Other ,2.7,2.4,2.4,2.2,2.1,#N/A,#N/A,2.4,2.1
