@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+Year,Council,Statement,Accessible rural,Accessible small towns,Large urban areas,Other urban areas,Remote rural,Remote small towns
+2012,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,29.9,35.3,35.2,31.3,33.5,29.6
+2013,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,34.2,33.2,36.9,33.1,33.7,31.3
+2014,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,32.7,31.7,38.8,30.3,33.7,27
+2015,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,31.9,29.5,40.4,31.2,27.6,27.9
+2016,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,29.7,26.9,40.8,30.1,32.8,35.1
+2017,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,30.8,31.2,36.7,32.9,26.1,27.6
+2018,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,34.1,33.1,37.9,31,31.9,28.8
+2019,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,32.5,28.7,32.2,29.3,22,24.5
+2020,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,,,,,,
+2021,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,,,,,,
+2022,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,31.4,32.5,35.3,31,29.9,34.5
+2023,Scotland,I would like to be more involved in the decisions my council makes that affect my local area,25.4,28,34.6,27.8,23.1,25.9
+2012,Scotland,I can influence decisions affecting my local area,18.9,20.9,23.3,19,26.1,23.6
+2013,Scotland,I can influence decisions affecting my local area,23.4,18.2,24,20.3,20.5,22.9
+2014,Scotland,I can influence decisions affecting my local area,26.9,22.3,24.6,20.6,22.2,20.3
+2015,Scotland,I can influence decisions affecting my local area,24.3,23.1,26.6,19.3,27.8,27.4
+2016,Scotland,I can influence decisions affecting my local area,22.4,20.4,28,18.9,25,21.2
+2017,Scotland,I can influence decisions affecting my local area,25.9,20.7,23.6,21.8,24.3,16
+2018,Scotland,I can influence decisions affecting my local area,19.3,21.5,20.6,19,20.9,22.6
+2019,Scotland,I can influence decisions affecting my local area,20.9,19.8,16.6,17.1,21.6,15.9
+2020,Scotland,I can influence decisions affecting my local area,,,,,,
+2021,Scotland,I can influence decisions affecting my local area,,,,,,
+2022,Scotland,I can influence decisions affecting my local area,21.7,18.9,16.2,17.2,20,18.4
+2023,Scotland,I can influence decisions affecting my local area,18.9,18.2,17.9,17.8,20.1,19
+=======
 "","Year","Council","","Large urban areas","Other urban areas","Accessible small towns","Remote small towns","Accessible rural","Remote rural"
 "257","2012","Scotland","I can influence decisions affecting my local area","23.3","19","20.9","23.6","18.9","26.1"
 "290","2012","Scotland","I would like to be more involved in the decisions my council makes that affect my local area","35.2","31.3","35.3","29.6","29.9","33.5"
@@ -19,3 +46,4 @@
 "2930","2022","Scotland","I would like to be more involved in the decisions my council makes that affect my local area","35.3","31","32.5","34.5","31.4","29.9"
 "3227","2023","Scotland","I can influence decisions affecting my local area","17.9","17.8","18.2","19","18.9","20.1"
 "3260","2023","Scotland","I would like to be more involved in the decisions my council makes that affect my local area","34.6","27.8","28","25.9","25.4","23.1"
+>>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4

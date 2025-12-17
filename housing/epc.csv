@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 ﻿Region,2018,2019,2020,2021,2022,2023
 SAP Methodology,SAP 2012 v9.93 ,SAP 2012 v9.93 ,N/A,N/A,SAP 2012 v9.93 ,SAP 2012 v9.93 
 % Urban Dwellings EPC C plus,47%,49%,#N/A,,56%,60%
 % Rural Dwellings EPC C plus,21%,25%,#N/A,,33%,36%
 % All Dwellings EPC C plus,43%,45%,#N/A,,52%,56%
+=======
+﻿Region,2018,2019,2020,2021,2022,2023
+SAP Methodology,SAP 2012 v9.93 ,SAP 2012 v9.93 ,N/A,N/A,SAP 2012 v9.93 ,SAP 2012 v9.93 
+% Urban Dwellings EPC C plus,47%,49%,#N/A,,56%,60%
+% Rural Dwellings EPC C plus,21%,25%,#N/A,,33%,36%
+% All Dwellings EPC C plus,43%,45%,#N/A,,52%,56%
+>>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
