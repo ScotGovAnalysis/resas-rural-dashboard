@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # modules/classification_module.R - Urban Rural Classification Information Pages
 
 # Classification data structures
@@ -850,4 +850,5 @@ classification_server <- function(input, output, session, classification_type) {
     }
   })
 }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
+
