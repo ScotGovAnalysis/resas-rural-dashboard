@@ -60,7 +60,7 @@ health_metrics <- list(
     source_url = " https://corc.uk.net/outcome-measures-guidance/directory-of-outcome-measures/short-warwick-edinburgh-mental-wellbeing-scale-swemwbs/ "
 =======
     source_url = "https://www.gov.scot/publications/scottish-surveys-core-questions-2023/documents/"
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
   ),
   "GP access" = list(
     file = "gp_access.xlsx",
@@ -2148,6 +2148,7 @@ health_server <- function(id, values, parent_session = NULL) {
     return(dt)
   })
 }
+
 
 
 
