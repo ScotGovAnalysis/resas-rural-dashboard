@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 # Load required libraries
 library(readxl)
@@ -4268,4 +4268,5 @@ population_server_module <- function(id, values) {
     population_server(id, values, session)
   })
 }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
+
