@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Load required libraries
 library(shiny)
 library(shinydashboard)
@@ -3158,4 +3158,3 @@ server <- function(input, output, session) {
 
 # Run the application
 shinyApp(ui = ui, server = server)
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
