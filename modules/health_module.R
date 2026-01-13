@@ -56,10 +56,9 @@ health_metrics <- list(
     classifications = c("6-fold"),
     full_name = "Warwick-Edinburgh Mental Well-being Scale (WEMWBS) score",
     source_text = "Scottish Surveys Core Questions (Scottish Household Survey)",
-<<<<<<< HEAD
+
     source_url = " https://corc.uk.net/outcome-measures-guidance/directory-of-outcome-measures/short-warwick-edinburgh-mental-wellbeing-scale-swemwbs/ "
-=======
-    source_url = "https://www.gov.scot/publications/scottish-surveys-core-questions-2023/documents/"
+
 
   ),
   "GP access" = list(
@@ -147,7 +146,7 @@ rating_sub_metrics <- c(
 
 # Static Key Insights for each health metric (with source integration)
 health_key_insights <- list(
-<<<<<<< HEAD
+
   "Quality of care" = "As of 2023-24, the quality of care experience is the highest in remote rural areas (81%) and the lowest in other urban areas (64%).",
   "Self-assessed health" = "As of 2023, positively rated self-assessed health is the highest in accessible rural areas (75%) and lowest in remote small towns (68%). The values are generally similar across the regions and cluster around the Scotland average of 72.2%",
   "Healthy Life Expectancy (males)" = "For 2019-2021, healthy life expectancy for males was the highest in accessible rural areas (65 years) and remote rural areas (64.3 years). It was the lowest in large urban areas and other urban areas (58.8 and 58.7 years).",
@@ -172,32 +171,7 @@ health_key_insights <- list(
 
 health_notes <- list("Quality of care" = "Responses show the the percentage of people who gave an overall positive rating (Excellent or Good) to the question, \"Overall, how would you rate the care provided by your General Practice\"",
                      "Self-assessed health" = "1. Self assessed general health data not available with Urban-Rural split in SSCQ 2017 and 2. Due to the impact of the COVID-19 pandemic, SSCQ data was not published for 2020 and 2021.",
-=======
-  "Quality of care" = "As of 2023, the quality of care experience is the highest in remote rural areas (81%) and the lowest in other urban areas (64%).",
-  "Self-assessed health" = "As of 2023, self-assessed health is the highest in accessible rural areas (75%) and lowest in remote small towns (68%) but the values are in general similar across the regions and cluster around the Scotland average of 72.2%.",
-  "Healthy Life Expectancy (males)" = "For 2019-2021, healthy life expectancy for males was the highest in accessible rural areas (65 years) and remote rural areas (64.3 years). It was the lowest in large urban areas and other urban areas (58.8 and 58.7 years).",
-  "Healthy Life Expectancy (females)" = "For 2019-2021, healthy life expectancy for females was the highest in remote rural areas (66.2 years) and the lowest in other urban areas (58.5 years).",
-  "Mental Well-being" = "The results for mental well-being scores were similar for all regions in 2023.",
-  "GP access" = "As of 2023, 91% of people living in remote rural areas find it easy to contact their GP in the way they want. On the other hand, only 71% people living in other urban areas find it easy to contact their GP the way they want.",
-  "Care impact on quality of life" = "The percentage of people who find that help, care or support maintained their quality of life decreased across geographical classifications between 2017 and 2021. Between 2021 and 2023 the percentage continued to fall or remain the same across most areas but increased by 6 percentage points in Remote Small Towns (Up from 63% to 69%).",
-  "Access to nature" = "Access to green and blue spaces varies significantly across Scotland, with rural areas generally having better access to natural environments within walking distance.",
-  "Out-of-hours healthcare Positive" = "As of 2023, perceptions of out of hours healthcare were generally positive across Scotland but more so in rural areas, with the highest percentage of positive experiences in remote small towns (82%). Accessible small towns received the lowest positive rating (72%).",
-  "Out-of-hours healthcare Neutral" = "[placeholder]",
-  "Out-of-hours healthcare Negative" = "[placeholder]",
-   "Help with Everyday Living Positive" = "In 2023, the positive rating of care, support and help with everyday living was the highest in remote small towns (73%) and the lowest in accessible small towns (61%).",
-  "Help with Everyday Living Neutral" = "[placeholder]",
-  "Help with Everyday Living Negative" = "[placeholder]",
-  "Care-Life Balance Positive" = "In 2023, the positive rating of balance between caring and other things in life was the highest in remote rural areas (63%) and the lowest in accessible small towns (57%).",
-  "Care-Life Balance Neutral" = "[placeholder]",
-  "Care-Life Balance Negative" = "[placeholder]",
-  "Support to Continue Caring Positive" = "In 2023, the positive rating of feeling supported to continue caring was the highest in large urban areas (32%) and the lowest in accessible small towns (29%). It is worth noting that the most popular rating of this question was 'neutral' rather than 'positive' or 'negative'.",
-  "Support to Continue Caring Neutral" = "[placeholder]",
-  "Support to Continue Caring Negative" = "[placeholder]"
-)
 
-health_notes <- list("Quality of care" = "",
-                     "Self-assessed health" = "",
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
                      "Healthy Life Expectancy (males)" = "",
                      "Healthy Life Expectancy (females)" = "",
                      "Mental Well-being" = tagList( 
@@ -205,13 +179,9 @@ health_notes <- list("Quality of care" = "",
                               tags$a(href = "https://corc.uk.net/outcome-measures-guidance/directory-of-outcome-measures/short-warwick-edinburgh-mental-wellbeing-scale-swemwbs/Shortened", 
                                      target = "_blank",  "Warwick-Edinburgh Mental Wellbeing Scale (SWEMWBS)"))),
                      "GP access" = "",
-<<<<<<< HEAD
+
                      "Care impact on quality of life" = "Due to changes to the routing of this question over the years, which affects who goes on to answer this question, these figures are not directtly comparable over time.",
                      "Access to nature" = "Due to pandemic-related changes to the Scottish Household Survey, figures for 2020 and 2021 are not comparable with other years. For interest, data for these years has been included below.",
-=======
-                     "Care impact on quality of life" = "",
-                     "Access to nature" = "",
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
                      "Out-of-hours healthcare" = "",
                      "Help with Everyday Living" = "",
                      "Care-Life Balance" = "",
@@ -274,12 +244,9 @@ load_self_assessed_health_data <- function() {
           Region == "Scotland" ~ "Scotland",
           TRUE ~ Region
         ),
-<<<<<<< HEAD
+
         Data_Source = "Scottish Government - Self-assessed Health",
         Year_Range = Year
-=======
-        Data_Source = "Scottish Government - Self-assessed Health"
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
       ) %>%
       filter(!is.na(Value), !is.na(Year), !is.na(Area_Type), Value > 0) %>%
       select(Year, Area_Type, Value, Data_Source)
@@ -337,11 +304,8 @@ load_healthy_life_expectancy_data <- function(filename, gender) {
         Data_Source = paste("Scottish Government - Healthy Life Expectancy", paste0("(", gender, ")"))
       ) %>%
       filter(!is.na(Value), !is.na(Year), !is.na(Area_Type)) %>%
-<<<<<<< HEAD
+
       select(Year, Year_Range = Period,  Area_Type, Value, Data_Source)
-=======
-      select(Year, Area_Type, Value, Data_Source)
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
     
     cat("Successfully loaded", nrow(processed_data), "healthy life expectancy records for", gender, "\n")
     return(processed_data)
@@ -385,12 +349,9 @@ load_wemwbs_data <- function() {
           Region == "Scotland" ~ "Scotland",
           TRUE ~ Region
         ),
-<<<<<<< HEAD
+
         Data_Source = "Scottish Government - Mental Well-being (WEMWBS)",
         Year_Range = Year
-=======
-        Data_Source = "Scottish Government - Mental Well-being (WEMWBS)"
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
       ) %>%
       filter(!is.na(Value), !is.na(Area_Type), Value > 0) %>%
       select(Year, Area_Type, Value, Data_Source)
@@ -447,11 +408,9 @@ load_care_impact_data <- function() {
       ) %>%
       filter(!is.na(Value), !is.na(Year), !is.na(Area_Type), 
              Response %in% c("Improved/Maintained", "Positive")) %>%
-<<<<<<< HEAD
+
       select(Year, Year_Range, Area_Type, Value, Data_Source)
-=======
-      select(Year, Area_Type, Value, Data_Source)
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
     
     cat("Successfully loaded", nrow(processed_data), "care impact records\n")
     return(processed_data)
@@ -506,11 +465,9 @@ load_care_experience_data <- function() {
       ) %>%
       filter(!is.na(Value), !is.na(Year), !is.na(Area_Type), 
              Response %in% c("Improved/Maintained", "Positive")) %>%
-<<<<<<< HEAD
+
       select(Year, Year_Range, Area_Type, Value, Data_Source)
-=======
-      select(Year, Area_Type, Value, Data_Source)
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
     
     cat("Successfully loaded", nrow(processed_data), "care experience records\n")
     return(processed_data)
@@ -570,12 +527,9 @@ load_5min_walk_data <- function() {
             Region_Clean == "Scotland" ~ "Scotland",
             TRUE ~ Region_Clean
           ),
-<<<<<<< HEAD
+
           Data_Source = "Scottish Government - Access to Nature (5min walk)",
           Year_Range = Year
-=======
-          Data_Source = "Scottish Government - Access to Nature (5min walk)"
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
         ) %>%
         # Filter out any rows where Area_Type is still the original Region_Clean (unmapped)
         filter(Area_Type != Region_Clean | Area_Type %in% c("Large Urban Areas", "Other Urban Areas", 
@@ -608,12 +562,9 @@ load_5min_walk_data <- function() {
             Region_Clean == "Scotland" ~ "Scotland",
             TRUE ~ Region_Clean
           ),
-<<<<<<< HEAD
+
           Data_Source = "Scottish Government - Access to Nature (5min walk)",
           Year_Range = Year,
-=======
-          Data_Source = "Scottish Government - Access to Nature (5min walk)"
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
         ) %>%
         filter(Area_Type != Region_Clean | Area_Type %in% c("Large Urban Areas", "Other Urban Areas",
                                                            "Accessible Small Towns", "Remote Small Towns", 
@@ -675,11 +626,8 @@ load_gp_access_data <- function() {
         Data_Source = "Scottish Government - GP Access"
       ) %>%
       filter(!is.na(Value), !is.na(Year), !is.na(Area_Type), Value > 0) %>%
-<<<<<<< HEAD
+
       select(Year, Year_Range, Area_Type, Value, Data_Source)
-=======
-      select(Year, Area_Type, Value, Data_Source)
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
     
     cat("Successfully loaded", nrow(processed_data), "GP access records\n")
     return(processed_data)
@@ -726,12 +674,9 @@ load_rating_data <- function(filename, data_source_name, selected_rating = NULL)
           Region == "Scotland" ~ "Scotland",
           TRUE ~ Region
         ),
-<<<<<<< HEAD
+
         Data_Source = data_source_name,
         Year_Range = Year
-=======
-        Data_Source = data_source_name
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
       ) %>%
       filter(!is.na(Value), !is.na(Area_Type), Value > 0)
     
@@ -823,10 +768,8 @@ load_health_2fold_data <- function(filename, selected_rating = NULL) {
         if (!is.na(urban_val) && urban_val != "-" && urban_val != "*") {
           urban_row <- data.frame(
             Year = year,
-<<<<<<< HEAD
+
             Year_Range = year,
-=======
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
             Area = "Urban",
             Value = as.numeric(urban_val),
             Data_Source = "Scottish Government - 2-fold",
@@ -838,10 +781,8 @@ load_health_2fold_data <- function(filename, selected_rating = NULL) {
         if (!is.na(rural_val) && rural_val != "-" && rural_val != "*") {
           rural_row <- data.frame(
             Year = year,
-<<<<<<< HEAD
+
             Year_Range = year, 
-=======
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
             Area = "Rural",
             Value = as.numeric(rural_val),
             Data_Source = "Scottish Government - 2-fold",
@@ -853,10 +794,8 @@ load_health_2fold_data <- function(filename, selected_rating = NULL) {
         if (!is.na(scotland_val) && scotland_val != "-" && scotland_val != "*") {
           scotland_row <- data.frame(
             Year = year,
-<<<<<<< HEAD
+
             Year_Range = year,
-=======
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
             Area = "Scotland",
             Value = as.numeric(scotland_val),
             Data_Source = "Scottish Government - 2-fold",
@@ -892,11 +831,8 @@ create_health_3fold <- function(data_2fold, data_6fold) {
   rural_data <- data_6fold %>%
     filter(Area_Type %in% c("Accessible Rural", "Remote Rural")) %>%
     rename(Area = Area_Type) %>%
-<<<<<<< HEAD
+
     select(Year, Year_Range, Area, Value, Data_Source) %>%
-=======
-    select(Year, Area, Value, Data_Source) %>%
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
     mutate(Data_Source = "Scottish Government - 3-fold (Rural from 6-fold)")
   
   scotland_data <- data_2fold %>%
@@ -959,7 +895,7 @@ load_health_data_simple <- function(metric_name, classification_type, selected_r
 }
 
 # Process data reactively
-<<<<<<< HEAD
+
 simple_aggregate_health_data_2 <- function(processed_data, classification_type = "6-fold") {
   if(nrow(processed_data) == 0) {
     return(data.frame())
@@ -982,8 +918,7 @@ simple_aggregate_health_data_2 <- function(processed_data, classification_type =
 }
 
 
-=======
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
 simple_aggregate_health_data <- function(processed_data, classification_type = "6-fold") {
   if(nrow(processed_data) == 0) {
     return(data.frame())
@@ -1000,12 +935,9 @@ simple_aggregate_health_data <- function(processed_data, classification_type = "
   }
   
   return(processed_data %>%
-<<<<<<< HEAD
+
            group_by(Year,
                     Area, Data_Source) %>%
-=======
-           group_by(Year, Area, Data_Source) %>%
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
            summarise(Value = mean(Value, na.rm = TRUE), .groups = 'drop'))
 }
 # Get key insights (preserved for future developer use)
@@ -1587,8 +1519,7 @@ health_server <- function(id, values, parent_session = NULL) {
   })
   
   output$health_year_selector <- renderUI({
-<<<<<<< HEAD
-   
+
     
     
      req(health_values$processed_data)
@@ -1606,13 +1537,6 @@ health_server <- function(id, values, parent_session = NULL) {
     
      
      if(length(available_years) > 0) {
-=======
-    req(health_values$processed_data)
-    if (nrow(health_values$processed_data) == 0) return(NULL)
-    if("Coming Soon" %in% unique(health_values$processed_data$Area)) return(NULL)
-    available_years <- sort(unique(health_values$processed_data$Year), decreasing = TRUE)
-    if(length(available_years) > 0) {
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
       selectInput("health_selected_year", "Select Year for Comparison:", choices = available_years, selected = available_years[1], width = "200px")
     }
   })
@@ -1758,10 +1682,7 @@ health_server <- function(id, values, parent_session = NULL) {
     
     return(div(h4("Health Data Loaded"), p(paste("Showing data for:", display_name))))
   })
-<<<<<<< HEAD
- 
-=======
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
   
   output$health_trend_chart <- renderPlotly({
     req(health_values$processed_data)
@@ -1771,7 +1692,7 @@ health_server <- function(id, values, parent_session = NULL) {
     }
     
     tryCatch({
-<<<<<<< HEAD
+
       
       if(input$health_metric %in% c("Self-assessed health",
                                     "Mental Well-being",
@@ -1781,15 +1702,11 @@ health_server <- function(id, values, parent_session = NULL) {
                                     "Care-Life Balance",
                                     "Support to Continue Caring" )){agg_data <-  simple_aggregate_health_data(health_values$processed_data, "6-fold") }
       else{agg_data <- simple_aggregate_health_data_2(health_values$processed_data, "6-fold")}
-=======
-      agg_data <- simple_aggregate_health_data(health_values$processed_data, "6-fold")
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
       
       if (nrow(agg_data) == 0) {
         return(plot_ly() %>% add_text(x = 0.5, y = 0.5, text = "No data available", textfont = list(size = 16)))
       }
-<<<<<<< HEAD
-    
+
       is_life_expectancy <- input$health_metric %in% c("Healthy Life Expectancy (males)", "Healthy Life Expectancy (females)")
       is_wemwbs <- input$health_metric == "Mental Well-being"
       is_gp_care <- input$health_metric %in% c("GP access", "Care impact on quality of life", "Quality of care" )
@@ -1799,21 +1716,12 @@ health_server <- function(id, values, parent_session = NULL) {
         agg_data$Value_Rounded <- round(agg_data$Value, 1)
         y_label <- "Years"
         tooltip_text <- paste0("Period: ", agg_data$Year_Range, "<br>Area: ", agg_data$Area, "<br>Life Expectancy: ", agg_data$Value_Rounded, " years")
-=======
-      
-      is_life_expectancy <- input$health_metric %in% c("Healthy Life Expectancy (males)", "Healthy Life Expectancy (females)")
-      is_wemwbs <- input$health_metric == "Mental Well-being"
-      
-      if (is_life_expectancy) {
-        agg_data$Value_Rounded <- round(agg_data$Value, 1)
-        y_label <- "Years"
-        tooltip_text <- paste0("Year: ", agg_data$Year, "<br>Area: ", agg_data$Area, "<br>Life Expectancy: ", agg_data$Value_Rounded, " years")
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       } else if (is_wemwbs) {
         agg_data$Value_Rounded <- round(agg_data$Value, 1)
         y_label <- "WEMWBS Score"
         tooltip_text <- paste0("Year: ", agg_data$Year, "<br>Area: ", agg_data$Area, "<br>Score: ", agg_data$Value_Rounded)
-<<<<<<< HEAD
+
       } 
       else if (is_gp_care) {
         agg_data$Value_Rounded <- round(agg_data$Value, 1)
@@ -1821,9 +1729,7 @@ health_server <- function(id, values, parent_session = NULL) {
         tooltip_text <- paste0("Period: ", agg_data$Year_Range, "<br>Area: ", agg_data$Area, "<br>Score: ", agg_data$Value_Rounded)
       } 
       else {
-=======
-      } else {
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
         agg_data$Value_Rounded <- round(agg_data$Value, 1)
         y_label <- "Percentage (%)"
         tooltip_text <- paste0("Year: ", agg_data$Year, "<br>Area: ", agg_data$Area, "<br>Rate: ", agg_data$Value_Rounded, "%")
@@ -1831,7 +1737,7 @@ health_server <- function(id, values, parent_session = NULL) {
       
       agg_data$tooltip <- tooltip_text
       
-<<<<<<< HEAD
+
       if(is_life_expectancy | is_gp_care) p <- {ggplot(agg_data, aes(x = Year, y = Value, color = Area, group = Area, text = tooltip)) +
         geom_line(size = 1.2, alpha = 0.8) +
         geom_point(size = 3) +
@@ -1851,8 +1757,7 @@ health_server <- function(id, values, parent_session = NULL) {
       
       
       else{ 
-=======
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       p <- ggplot(agg_data, aes(x = Year, y = Value, color = Area, group = Area, text = tooltip)) +
         geom_line(size = 1.2, alpha = 0.8) +
         geom_point(size = 3) +
@@ -1865,11 +1770,9 @@ health_server <- function(id, values, parent_session = NULL) {
         scale_x_continuous(breaks = function(x) {
           if(length(x) == 0 || all(is.na(x))) return(c())
           seq(floor(min(x, na.rm = TRUE)), ceiling(max(x, na.rm = TRUE)), by = 1)
-<<<<<<< HEAD
+
         })}
-=======
-        })
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       
       area_colors <- get_health_colors(unique(agg_data$Area), "6-fold")
       if(length(area_colors) > 0) {
@@ -1892,19 +1795,17 @@ health_server <- function(id, values, parent_session = NULL) {
   
   output$health_comparison_chart <- renderPlotly({
     req(health_values$processed_data, input$health_selected_year)
-<<<<<<< HEAD
+
       is_life_expectancy <- input$health_metric %in% c("Healthy Life Expectancy (males)", "Healthy Life Expectancy (females)")
       is_wemwbs <- input$health_metric == "Mental Well-being"
       is_gp_care <- input$health_metric %in% c("GP access", "Care impact on quality of life")
-=======
-    
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
     if("Coming Soon" %in% unique(health_values$processed_data$Area)) {
       return(plot_ly() %>% add_text(x = 0.5, y = 0.5, text = "Coming Soon - 2-fold data files not yet available", textfont = list(size = 16)))
     }
     
     tryCatch({
-<<<<<<< HEAD
+
       if(input$health_metric %in% c("Self-assessed health",
                                     "Mental Well-being",
                                     "Access to nature",
@@ -1917,17 +1818,12 @@ health_server <- function(id, values, parent_session = NULL) {
      if(is_life_expectancy|is_gp_care){selected_data <- agg_data %>% filter(Year_Range == input$health_selected_year)}
       else{
       selected_data <- agg_data %>% filter(Year == as.numeric(input$health_selected_year))}
-=======
-      agg_data <- simple_aggregate_health_data(health_values$processed_data, "6-fold")
-      selected_data <- agg_data %>% filter(Year == as.numeric(input$health_selected_year))
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       
       if (nrow(selected_data) == 0) {
         return(plot_ly() %>% add_text(x = 0.5, y = 0.5, text = paste("No data available for", input$health_selected_year), textfont = list(size = 16)))
       }
-      
-<<<<<<< HEAD
-    
+         
       if (is_life_expectancy) {
         selected_data$Value_Rounded <- round(selected_data$Value, 1)
         x_label <- "Years"
@@ -1944,23 +1840,7 @@ health_server <- function(id, values, parent_session = NULL) {
         selected_data$Value_Rounded <- round(selected_data$Value, 0)
         x_label <- "Percentage (%)"
         tooltip_text <- paste0("Year: ", selected_data$Area, "<br>Percentage: ", selected_data$Value_Rounded, "%")
-=======
-      is_life_expectancy <- input$health_metric %in% c("Healthy Life Expectancy (males)", "Healthy Life Expectancy (females)")
-      is_wemwbs <- input$health_metric == "Mental Well-being"
-      
-      if (is_life_expectancy) {
-        selected_data$Value_Rounded <- round(selected_data$Value, 1)
-        x_label <- "Years"
-        tooltip_text <- paste0("Area: ", selected_data$Area, "<br>Life Expectancy: ", selected_data$Value_Rounded, " years")
-      } else if (is_wemwbs) {
-        selected_data$Value_Rounded <- round(selected_data$Value, 1)
-        x_label <- "WEMWBS Score"
-        tooltip_text <- paste0("Area: ", selected_data$Area, "<br>Score: ", selected_data$Value_Rounded)
-      } else {
-        selected_data$Value_Rounded <- round(selected_data$Value, 0)
-        x_label <- "Percentage (%)"
-        tooltip_text <- paste0("Area: ", selected_data$Area, "<br>Rate: ", selected_data$Value_Rounded, "%")
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       }
       
       selected_data$tooltip <- tooltip_text
@@ -2006,13 +1886,9 @@ health_server <- function(id, values, parent_session = NULL) {
       }
       
       data <- simple_aggregate_health_data(health_values$processed_data, "6-fold") %>%
-<<<<<<< HEAD
         select(Year_Range, Area, Value, Data_Source) %>%
         arrange(Year_Range, Area)
-=======
-        select(Year, Area, Value, Data_Source) %>%
-        arrange(Year, Area)
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       
       write.csv(data, file, row.names = FALSE)
     }
@@ -2032,8 +1908,7 @@ health_server <- function(id, values, parent_session = NULL) {
         return(NULL)
       }
       
-<<<<<<< HEAD
-      
+
       is_life_expectancy <- input$health_metric %in% c("Healthy Life Expectancy (males)", "Healthy Life Expectancy (females)")
       is_wemwbs <- input$health_metric == "Mental Well-being"
       is_gp_care <- input$health_metric %in% c("GP access", "Care impact on quality of life")
@@ -2048,12 +1923,7 @@ health_server <- function(id, values, parent_session = NULL) {
         filter(Year == as.numeric(input$health_selected_year)) %>%
         select(Year, Area, Value, Data_Source) %>%
         arrange(Area)}
-=======
-      data <- simple_aggregate_health_data(health_values$processed_data, "6-fold") %>%
-        filter(Year == as.numeric(input$health_selected_year)) %>%
-        select(Year, Area, Value, Data_Source) %>%
-        arrange(Area)
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       
       write.csv(data, file, row.names = FALSE)
     }

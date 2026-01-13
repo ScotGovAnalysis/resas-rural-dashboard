@@ -46,11 +46,8 @@ economy_metrics <- list(
   "High growth private businesses" = list(
     file = "Table 9",
     file_type = "multi_sheet",
-<<<<<<< HEAD
     classifications = c("4-fold"), 
-=======
-    classifications = c("2-fold", "4-fold"), 
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
      # "4-fold",
     full_name = "Number of high growth registered private sector businesses",
     aggregate_method = "sum"  # sum instead of average
@@ -81,7 +78,7 @@ economy_metrics <- list(
 )
 # Static Key Insights for each economy metric 
 economy_key_insights <- list(
-<<<<<<< HEAD
+
   "Regional Gross Value Added" = "Regional Gross Value Added in Scotland is the highest in larger cities (£7,0334m in 2022) and the lowest in islands and remote rural areas (£4,339m in 2022).",
   
   "Number of VAT/PAYE Businesses" = "Number of VAT/PAYE businesses in Scotland is higher in Urban (109,330) than in Rural Areas (68,260) as of 2024. However, in a 4-fold RESAS split, mainly rural areas have the highest number of VAT/PAYE businesses (59,815) closely followed by urban with substantial rural areas (58370) and larger cities (50960).",
@@ -91,19 +88,7 @@ economy_key_insights <- list(
   "High growth private businesses" = "The number of high growth private businesses has increased since 2021 in all of the RESAS regions, following a drop from 2020 to 2021 due to the COVID pandemic. Data for recent years has been impacted by high inflation and a bounce back of business turnover following the COVID-19 pandemic.",
   
   "Economic inactivity 4-fold" = "Since 2023 economic inactivity has generally been lower the more rural the regional classification for a given local authority. 2016 saw the most substantial difference (10.1 percentage points between island and remote rural areas and larger cities). Since then the gap has closed with rates of inactivity growing in regions with rural areas and reducing in larger cities. In 2022 economic inactivity differed by only 2.1 percentage points in 2022, ranging from 21.3% in island and remote rural areas to 23.4% in larger cities.",
-=======
-  "Regional Gross Value Added" = "Regional Gross Value Added in Scotland is the highest in larger cities (£70334m in 2022) and the lowest in islands and remote rural areas (£4339m in 2022).",
-  
-  "Number of VAT/PAYE Businesses" = "Number of VAT/PAYE businesses in Scotland is higher in Urban (109330) than in Rural Areas (68260) as of 2024. However, in a 4-fold RESAS split, mainly rural areas have the highest number of VAT/PAYE businesses (59815) closely followed by urban with substantial rural areas (58370) and larger cities (50960).",
-  
-  "Registered private sector businesses" = "The number of registered private sector businesses in Scotland remains stable across all 6-folds, with large urban areas showing the highest number in 2024 (60295) and remote small towns the lowest (7020).",
-  
-  "High growth private businesses" = "The number of high growth private businesses has increased since 2021 in all of the RESAS regions, following a drop from 2020 to 2021 due to the COVID pandemic. The values have mostly recovered exceeding pre-pandemic levels.",
-  
-  "Economic inactivity 4-fold" = "Since 2023 economic inactivity has generally been lower the more rural the regional classification for a given local authority. 2016 saw the most substantial difference (10.1 percentage points between island and remote rural areas and larger cities). Since then the gap has closed with rates of inactivity growing in regions with rural areas and reducing in larger cities. In 2022 economic inactivity differed by only 2.1 percentage points in 2022, ranging from 21.3% in island and remote rural areas to 23.4% in larger cities.",
-  
-  
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
   "Economic inactivity 3-fold" = "In 2023, accessible rural areas showed the lowest economic inactivity rates (21%) followed by remote rural areas (22%). The rest of Scotland had the highest economic inactivity rates at 23%.",  
   
   
@@ -124,28 +109,19 @@ economy_notes <- list(
   
   "Economic inactivity 4-fold" = "4-fold data uses the RESAS classification of urban / rural Local Authorities",
   
-<<<<<<< HEAD
+
   "Economic inactivity 3-fold" = "1.  3-fold data uses the Scottish Government 3-fold Urban Rural classification 2020. 2.	This analysis was bespoke and some data were incomplete so should be treated as a provisional.",
-=======
-  "Economic inactivity 3-fold" = "1.	3-fold data uses the Scottish Government 3-fold Urban Rural classification 2020. 2.	This analysis was bespoke and some data were incomplete so should be treated as a provisional",
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
-  
+
   "Broadband coverage" = "1. Superfast broadband refers to download speeds of >= 30Mbit/s. 2. Prior to 2019, source data does not distinguish between residential and commerical premises. 3. September figures have been taken as the annual value for each year, in accordance with annual report practice. See below for latest July 2024 update. 4. Locale classification is used to identify premises as being in either an urban or rural area. Locale is a third-party data source based on the analysis of 2011 census output areas (OAs).",
   
   "4G coverage" = "1. September figures have been taken as the annual value for each year, in accordance with annual report practice. 2.  Locale classification is used to identify premises as being in either an urban or rural area. Locale is a third-party data source based on the analysis of 2011 census output areas (OAs)."
 )
 
-<<<<<<< HEAD
-economic_inactivity_3fold_sub_metrics <- c("Economically inactive" = "Economically inactive",
-  "Economically Active" = "Economically Active",
-  "In employment, education or training" = "In employment, education or training"
-  
-=======
+
 economic_inactivity_3fold_sub_metrics <- c(
   "Economically Active" = "Economically Active",
   "In employment, education or training" = "In employment, education or training", 
   "Economically inactive" = "Economically inactive"
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
 )
 
 # Rural/Urban classification mapping (4-fold from Excel data)
@@ -307,11 +283,9 @@ load_economic_inactivity_3fold_data <- function(selected_sub_metric = NULL) {
         Area = case_when(
           Region == "Remote Rural" ~ "Remote Rural",
           Region == "Accessible Rural" ~ "Accessible Rural",
-<<<<<<< HEAD
+
           Region == "Rest of Scotland" ~ "Rest of Scotland" ,  # Rest of Scotland = Urban
-=======
-          Region == "Rest of Scotland" ~ "Urban",  # Rest of Scotland = Urban
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
           TRUE ~ Region
         ),
         # Clean up sub-metric names
@@ -385,7 +359,7 @@ load_excel_table_data <- function(table_name) {
     }
     
     # Find header row - look for row where columns year_start_col+ contain 4-digit years
-<<<<<<< HEAD
+
     # data_start <- NA
     # for(i in 1:min(50, nrow(raw_data))) {
     #   year_cols <- sapply(year_start_col:ncol(raw_data), function(j) {
@@ -437,15 +411,6 @@ load_excel_table_data <- function(table_name) {
         nzchar(val_chr) && !is.na(val_chr) && grepl(year_regex, val_chr)
       }, logical(1))
       if (sum(year_cols, na.rm = TRUE) >= min_year_cols) {
-=======
-    data_start <- NA
-    for(i in 1:min(50, nrow(raw_data))) {
-      year_cols <- sapply(year_start_col:ncol(raw_data), function(j) {
-        val <- as.character(raw_data[[i, j]])
-        !is.na(val) && grepl("^[0-9]{4}$", val)
-      })
-      if (sum(year_cols) >= 10) {  # At least 10 columns with 4-digit years
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
         data_start <- i
         break
       }
@@ -453,17 +418,15 @@ load_excel_table_data <- function(table_name) {
     
     if (is.na(data_start)) {
       cat("Could not find data start row in", table_name, "\n")
-<<<<<<< HEAD
+
       print(utils::head(raw_data, 20))
-=======
-      print(head(raw_data, 20))
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
       return(data.frame())
     }
     
     cat("Data starts at row:", data_start, "\n")
     
-<<<<<<< HEAD
+
     # Only slice data rows if they exist
     if (data_start >= nrow(raw_data)) {
       cat("No data rows found after header for", table_name, "\n")
@@ -473,22 +436,14 @@ load_excel_table_data <- function(table_name) {
     data_rows <- raw_data[(data_start + 1L):nrow(raw_data), , drop = FALSE]
     
     # start_years presence check
-=======
-    # Extract data rows (start after header)
-    data_rows <- raw_data[(data_start + 1):nrow(raw_data), ]
-    
-    # Assign column names based on table
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
     if (!table_name %in% names(start_years)) {
       cat("No start year defined for", table_name, "\n")
       return(data.frame())
     }
     
-<<<<<<< HEAD
-  
-    
-=======
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
+
     num_year_cols <- ncol(data_rows) - prefix_cols
     start_year <- start_years[[table_name]]
     years <- seq(start_year, start_year + num_year_cols - 1)
@@ -801,15 +756,11 @@ aggregate_economy_by_classification <- function(processed_data, classification_t
   }
   
   #  For registered businesses, filter to individual 6-fold rows only (excludes aggs to prevent double-counting)
-<<<<<<< HEAD
+
   # if(!is.null(metric_name) && metric_name == "Registered private sector businesses") {
   #   processed_data <- processed_data %>% filter(!is.na(Classification_6fold))
   # }
-=======
-  if(!is.null(metric_name) && metric_name == "Registered private sector businesses") {
-    processed_data <- processed_data %>% filter(!is.na(Classification_6fold))
-  }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
   
   # Determine classification column (fix for registered vs. inactivity)
   classification_col <- case_when(
@@ -1763,7 +1714,7 @@ economy_server <- function(id, values, parent_session = NULL) {
     }
     
     display_name <- get_economy_metric_display_name(input$economy_metric)
-<<<<<<< HEAD
+
     custom_insight <-  if (input$economy_metric == "Economic inactivity") {
       economy_key_insights[[paste(input$economy_metric, input$economy_classification_type)]]
     } else {economy_key_insights[[input$economy_metric]]}
@@ -1771,11 +1722,7 @@ economy_server <- function(id, values, parent_session = NULL) {
     custom_notes <- if (input$economy_metric == "Economic inactivity") {
       economy_notes[[paste(input$economy_metric, input$economy_classification_type)]]} 
     else {economy_notes[[input$economy_metric]]}
-=======
-    custom_insight <- economy_key_insights[[input$economy_metric]]
-    custom_notes <- economy_notes[[input$economy_metric]]
-    
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
     # Define source information
     # source_info <- list(
     #   text = "Sub-Scotland Economic Statistics / Digital Scotland",
@@ -1916,21 +1863,17 @@ economy_server <- function(id, values, parent_session = NULL) {
     
     # Skip for Economic inactivity
     if(input$economy_metric == "Economic inactivity") {
-<<<<<<< HEAD
+
       return(valueBox(value = "N/A", subtitle = "Urban-Rural Difference", icon = icon("balance-scale"), color = "aqua"))
-=======
-      return(valueBox(value = "N/A", subtitle = "Urban-Rural Gap", icon = icon("balance-scale"), color = "aqua"))
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
     }
     
     key_insights <- get_economy_urban_rural_2fold(economy_values$processed_data, input$economy_metric)
     val <- calculate_economy_gap(key_insights$urban, key_insights$rural, input$economy_metric)
     
-<<<<<<< HEAD
+
     valueBox(value = val, subtitle = "Urban-Rural Difference", icon = icon("balance-scale"), color = "aqua")
-=======
-    valueBox(value = val, subtitle = "Urban-Rural Gap", icon = icon("balance-scale"), color = "aqua")
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
   })
   
   # Trend chart with 45-degree rotated labels and Scotland as gray
@@ -1956,7 +1899,6 @@ economy_server <- function(id, values, parent_session = NULL) {
         tooltip_text <- paste0("Year: ", agg_data$Year, "<br>Area: ", agg_data$Area, "<br>Rate: ", agg_data$Value_Rounded, "%")
       } else {
         agg_data$Value_Rounded <- round(agg_data$Value, 0)
-<<<<<<< HEAD
         if(input$economy_metric == "Regional Gross Value Added") {y_label <-"£ millions"
         tooltip_text <- paste0("Year: ", agg_data$Year, "<br>Area: ", agg_data$Area, "<br>£ millions: ", scales::comma(agg_data$Value_Rounded))
         }
@@ -1971,13 +1913,7 @@ economy_server <- function(id, values, parent_session = NULL) {
         }}
           
           
-        
-=======
-        y_label <- "Value"
-        tooltip_text <- paste0("Year: ", agg_data$Year, "<br>Area: ", agg_data$Area, "<br>Value: ", scales::comma(agg_data$Value_Rounded))
-      }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
-      
+
       agg_data$tooltip <- tooltip_text
       
       p <- ggplot(agg_data, aes(x = Year, y = Value, color = Area, group = Area, text = tooltip)) +
