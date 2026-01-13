@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # modules/agriculture_module.R
 # PART 1: Setup, Configuration, and Data Loading Functions
 
@@ -4955,4 +4955,3 @@ agriculture_server_module <- function(id, values) {
     agriculture_server(id, values, session)
   })
 }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
