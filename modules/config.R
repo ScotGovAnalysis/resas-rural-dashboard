@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # modules/config.R - Configuration and shared data structures
 
 
@@ -671,4 +671,4 @@ apply_classification_colors <- function(plot, data, classification_type, color_c
   }
   return(plot)
 }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
