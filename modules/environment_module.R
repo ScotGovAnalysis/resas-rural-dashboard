@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ===========================================
 # ENVIRONMENT DASHBOARD - PART 1: DATA FUNCTIONS AND CONFIGURATIONS
 # ===========================================
@@ -4004,4 +4004,5 @@ observeEvent(input$back_to_categories, {
 })
 
 }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
+
