@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Version: 1.0
 
 RestoreWorkspace: Default
@@ -26,4 +26,4 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
