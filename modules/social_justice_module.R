@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 # Load required libraries
 library(readxl)
@@ -3664,4 +3664,4 @@ social_justice_server <- function(id, values, parent_session = NULL) {
     return(dt)
   })
 }
->>>>>>> a88732c399431e9b684a6e02de83638eef2a8ee4
+
